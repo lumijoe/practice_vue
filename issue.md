@@ -1,5 +1,12 @@
 ## Vue.js https://ja.vuejs.org/
 
+## Vue2.6.10 + Node .js16.20.2
+
+- Vue3 では Node18 以上が必要
+- 技術書に合わせて Vue2 で実装、その後 Vue3 をキャッチアップ予定
+
+## JavaScript
+
 - JavaScript フレームワーク
 - アプリデータを自動的にページに反映
 - ブラウザ上でデスクトップアプリライクなページ Ajax サービスとして Google マップが有名
@@ -11,7 +18,7 @@
   - Web Workers(JavaScript のコードをバックグラウンドで実行)
   - WebSocket(サーバー、クライアント間での双方向通信)
 
-## アプリの規模によって機能を追加していける
+## Vue:アプリの規模によって機能を追加していける
 
 - コンポーネントで Static Site など
 - Vue CLI(コマンドラインツール)、VueRouter(コンポーネントを使用して SPA を作成)、Vuex(データベース作成)
