@@ -1,0 +1,31 @@
+<!-- bind.html -->
+<!-- list2-7(p26)0109 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    <!-- ページ本体 -->
+    <div id="app">
+        <!-- <p>{{ message }}</p>と↓v-textディレクティブは意味的に等価：基礎的なマスタッシュ構文 -->
+        <!-- <p v-text="message"></p> messageのデータを返す：v-text="" -->
+        <!-- <p v-pre>{{ message }}</p> messageそのものを文字列として返す：v-pre -->
+        <a v-bind:href="url">WINGSプロジェクト</a><!-- href属性を使用する：v-bind:href="" -->
+
+    </div>
+
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <!-- オフライン環境での実行(万が一CDN障害でもローカルからライブラリをインポートさせる) -->
+    <script>
+        window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');
+    </script>  
+    <script src="js/bind.js"></script>
+</body>
+</html>
