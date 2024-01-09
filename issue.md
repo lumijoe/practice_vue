@@ -45,4 +45,6 @@
 - 属性操作、条件分岐やループ機能はディレクティブ(v-...)
 - データの加工や操作は、算出プロパティやメソッド
 
-## まずは CDN の利用から　https://ja.vuejs.org/guide/quick-start.html#using-vue-from-cdn
+## 開発用：　 CDN 利用　　https://ja.vuejs.org/guide/quick-start.html#using-vue-from-cdn
+
+## 本番用：　ダウンロードバージョン: lib/vue.min.js として offline.html でインポートする
