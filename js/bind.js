@@ -4,6 +4,6 @@
 new Vue({
     el: '#app',
     data: {
-        url: 'https://wings.msn.to/' // サーバーサイドの学び舎サイト
+        url: 'https://wings.msn.to/' // サーバーサイド技術の学び舎サイト
     }
 });
