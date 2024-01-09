@@ -1,4 +1,4 @@
-<!-- js/hello.html -->
+<!-- hello.html -->
 <!-- list2-2(p18)0105 -->
 
 <!DOCTYPE html>
@@ -18,6 +18,10 @@
 
     <!-- Vue -->
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <!-- オフライン環境での実行(万が一CDN障害でもローカルからライブラリをインポートさせる) -->
+    <script>
+        window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');
+    </script>  
     <script src="js/hello.js"></script>
 </body>
 </html>
