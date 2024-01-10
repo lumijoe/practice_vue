@@ -1,5 +1,5 @@
-// js/compute.js
-// list2-14(p29)0110
+// js/method.js
+// list2-16(p30)0110
 
 new Vue({
     el: '#app',
@@ -7,7 +7,7 @@ new Vue({
         email: 'Y-Suzuki@example.com'
     },
     // 算出した結果を取得する算出プロパティ
-    computed: {
+    methods: {
         localEmail: function() {
             return this.email.split('@')[0].toLowerCase();
         }
