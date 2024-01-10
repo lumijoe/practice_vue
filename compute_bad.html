@@ -1,0 +1,28 @@
+<!-- compute_bad.html -->
+<!-- list2-11(p28)0110 -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    <!-- ページ本体 -->
+    <!-- テンプレート側 -->
+    <div id="app">
+        <p>{{ email.split('@')[0].toLowerCase() }}</p>
+    </div>
+
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <!-- オフライン環境での実行(万が一CDN障害でもローカルからライブラリをインポートさせる) -->
+    <script>
+        window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');
+    </script>  
+    <script src="js/compute_bad.js"></script>
+</body>
+</html>
