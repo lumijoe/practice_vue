@@ -1,0 +1,34 @@
+<!-- list2-26(p45) -->
+<!-- watcher.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    <!-- ページ本体 -->
+    <div id="app">
+        <!-- 入力値をnameプロパティにバインド -->
+        <label>名前：
+            <input type="text" v-model="name" />
+        </label>
+        <p>入力された値: {{ upperName }}</p>
+    </div>
+
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <!-- オフライン環境での実行(万が一CDN障害でもローカルからライブラリをインポートさせる) -->
+    <script>
+        window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');
+    </script>  
+    <!-- lodashをインポート -->
+    <script src="https://cdn.jsdeliver.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    
+    <script src="js/watcher.js"></script>
+</body>
+</html>
