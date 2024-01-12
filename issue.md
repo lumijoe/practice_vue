@@ -1,5 +1,7 @@
 ## Vue.js https://ja.vuejs.org/
 
+- 起動はファイルを開き右クリック open with live viewer などで起動する方法
+
 ## Vue2.6.10 + Node .js16.20.2
 
 - Vue3 では Node18 以上が必要
