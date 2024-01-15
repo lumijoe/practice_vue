@@ -1,0 +1,32 @@
+<!--  -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    <!-- ページ本体 -->
+    <div id="app">
+        <!-- 入力値をnameプロパティにバインド -->
+        <img v-bind:src="path" alt="ロゴ画像"
+            v-on:mouseenter="onmouseenter" v-on:mouseleave="onmouseleave" />
+        <p>{{ message }}</p>
+    </div>
+
+    <!-- Vue -->
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+    <!-- オフライン環境での実行(万が一CDN障害でもローカルからライブラリをインポートさせる) -->
+    <script>
+        window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');
+    </script>  
+    <!-- lodashをインポート -->
+    <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+    
+    <script src="js/event_mouse.js"></script>
+</body>
+</html>
