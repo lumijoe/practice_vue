@@ -9,7 +9,8 @@ new Vue({
     methods: {
         // クリック時に現在日時を取得
         onclick: function() {
-            this.message = new Date().toLocaleString();
+            this.message = "HI!";
+            // this.message = new Date().toLocaleString();
             console.log("Hi");
         }
     }
