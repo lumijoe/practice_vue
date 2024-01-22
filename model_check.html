@@ -14,10 +14,11 @@
     
     <div id="app">
         <form>
-            <label for="agree">同意する</label>
+            <label for="agree">{{ messageDefault }}</label>
             <input type="checkbox" id="agree" v-model="agree" />
        </form>
-       <div>回答：{{ agree }}</div>
+       <!-- <div>回答：{{ agree }}</div> -->
+       <div>回答：{{ agree ? messageTrue : messageFalse }}</div>
     </div>  
 
 

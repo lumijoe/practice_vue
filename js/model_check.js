@@ -4,7 +4,10 @@
 new Vue({
     el: '#app',
     data: {
-        agree: true
+        agree: true,
+        messageTrue: '同意する',
+        messageFalse: '同意しない',
+        messageDefault: '同意する'
     }
 });
  
