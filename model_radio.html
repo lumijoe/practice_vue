@@ -1,0 +1,42 @@
+<!-- list3-19(p69)0122 -->
+<!-- model_radio.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    
+    <div id="app">
+        <form>
+            <label for="dog">いぬ</label>
+            <input type="radio" id="dog" value="いぬ" v-model="pet" />
+            <br/>
+            <label for="cat">ねこ</label>
+            <input type="radio" id="cat" value="ねこ" v-model="pet" />
+            <br/>
+            <label for="other">その他</label>
+            <input type="radio" id="other" value="その他" v-model="pet" />
+            <br/>
+       </form>
+       <p>ペット：{{ pet }}</p>
+    </div>  
+
+
+
+    <!-- lodashとVueの設定 -------------------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <!-- オフライン環境での実行が可能 -->
+        <script>window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');</script>  
+        <!-- lodashをインポート -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <!-- jsファイルの読み込み -->
+        <script src="js/model_radio.js"></script>
+    <!-- ------------------------------------------------ -->
+</body>
+</html>
