@@ -1,5 +1,5 @@
-<!-- list3-15(p66)0122 -->
-<!-- event_args2.html -->
+<!-- list3-17(p67)0122 -->
+<!-- form.html -->
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -13,8 +13,14 @@
 <body>
     
     <div id="app">
-       <button v-on:click="onclick('ようこそ！', $event)">クリック</button>
+        <form>
+            <label for="name">氏名</label>
+            <input type="text" id="name" v-model="myName" />
+       </form>
+       <div>こんにちわ、{{ myName }} さん！</div>
     </div>  
+
+
 
     <!-- lodashとVueの設定 -------------------------------- -->
         <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
@@ -23,7 +29,7 @@
         <!-- lodashをインポート -->
         <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
         <!-- jsファイルの読み込み -->
-        <script src="js/event_args2.js"></script>
+        <script src="js/form.js"></script>
     <!-- ------------------------------------------------ -->
 </body>
 </html>

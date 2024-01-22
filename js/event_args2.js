@@ -1,5 +1,5 @@
-// list3-8(p60)0122
-// event_error.js
+// list3-16(p66)0122
+// event_args2.js
 
 new Vue({
     el: '#app',
