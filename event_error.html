@@ -13,7 +13,9 @@
 <body>
     
     <div id="app">
-    </div> 
+        <img v-bind:src="path" v-on:error="onerror" />
+        <!-- <img v-bind:src="path2" v-on:error="onerror" /> -->
+    </div>  
 
 
 
@@ -24,7 +26,7 @@
         <!-- lodashをインポート -->
         <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
         <!-- jsファイルの読み込み -->
-        <script src="js/event_mouse2.js"></script>
+        <script src="js/event_error.js"></script>
     <!-- ------------------------------------------------ -->
 </body>
 </html>

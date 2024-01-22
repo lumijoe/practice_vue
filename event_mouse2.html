@@ -15,14 +15,14 @@
     <div id="app" style="width: 100vw;">
         <!-- mouseenter / mouseleave イベント -->
         <div id="outer"
-            style="background-color: aqua; width: 70vw; margin: auto; height: 50vh; display: flex; align-items: center;"
+            style="background-color: aqua; width: 70vw; margin: auto; height: 50vh; display: flex; justify-content: center; align-items: center;"
             v-on:mouseenter="onmousein" v-on:mouseleave="onmouseout">
             外（outer）
-            <p id="inner"
-                style="background-color: rgb(172, 172, 184); width: 50vw;  height: 25vh;"
+            <div id="inner"
+                style="background-color: rgb(172, 172, 184); width: 50vw; height: 25vh;"
                 v-on:mouseenter="onmousein" v-on:mouseleave="onmouseout">
                 内（inner）
-            </p>
+            </div>
         </div>
         <div v-html="result"></div>
     </div> 
