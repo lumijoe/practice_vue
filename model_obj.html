@@ -1,0 +1,44 @@
+<!-- list3-29(p74)0123 -->
+<!-- model_obj.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    <div id="app">
+        <form>
+            <label for="million">百万</label>
+            <input type="radio" id="million" v-model="unit"
+                v-on:change="onchange"
+                v-bind:value="{ name: '百万', size: '1000000' }" /><br />
+            <label for="billion">十億</label>
+            <input type="radio" id="billion" v-model="unit"
+                v-on:change="onchange"
+                v-bind:value="{ name: '十億', size: '1000000000' }" /><br />
+            <label for="trillion">一兆</label>
+            <input type="radio" id="trillion" v-model="unit"
+                v-on:change="onchange"
+                v-bind:value="{ name: '一兆', size: '1000000000000' }" /><br />
+        </form>
+       
+    </div>  
+
+
+
+    <!-- lodashとVueの設定 -------------------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <!-- オフライン環境での実行が可能 -->
+        <script>window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');</script>  
+        <!-- lodashをインポート -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <!-- jsファイルの読み込み -->
+        <script src="js/model_obj.js"></script>
+    <!-- ------------------------------------------------- -->
+</body>
+</html>
