@@ -1,5 +1,5 @@
-<!-- list3-25(p73)0123 -->
-<!-- model_select.html -->
+<!-- list3-27(p74)0123 -->
+<!-- select_multi.html -->
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -15,8 +15,7 @@
     <div id="app">
         <form>
             <label for="os">お使いのOSは？</label><br />
-            <select id="os" v-model="os">
-               <option value="">OSを選択してください</option> 
+            <select id="os" v-model="os" multiple size="3">
                <option>Windows</option>
                <option>Linux</option>
                <option>macOS</option>
