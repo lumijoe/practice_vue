@@ -1,13 +1,3 @@
-// list3-22(p71)0122
-// model_check.js
+// list3-24(p72)0123
+// model_check_multi.js
 
-new Vue({
-    el: '#app',
-    data: {
-        agree: true,
-        messageTrue: '同意する',
-        messageFalse: '同意しない',
-        messageDefault: '同意する'
-    }
-});
- 
