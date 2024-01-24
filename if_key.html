@@ -1,0 +1,54 @@
+<!-- list3-46(p87)0124 -->
+<!-- if_key.html -->
+<!-- 動作バグバージョン：意図しない動作（参考if_else.html） -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    <div id="app">
+        <fieldset>
+            <legend>支払方法</legend>
+            <!-- クレジットカード -->
+            クレジットカード：
+            <input type="radio" name="pay" value="credit" v-model="pay" />
+            <!-- 銀行振込 -->
+            銀行振込：
+            <input type="radio" name="pay" value="bank" v-model="pay" />
+            <!-- 区切り -->
+            <hr />
+            <!-- 支払方法に応じて、入力ボックスを切り替え -->
+            
+            <div v-if="pay === 'credit'">
+                カード番号：
+                <!-- key指定により、入力情報はきちんと更新される -->
+                <input type="text" key="credit"/>
+            </div>
+            <div v-else-if="pay === 'bank'">
+                口座番号&nbsp;&nbsp;&nbsp;：
+                <!-- key指定により、入力情報はきちんと更新される -->
+                <input type="text" key="bank" />
+            </div>
+        </fieldset>
+    </div>  
+
+
+
+
+    <!-- lodashとVueの設定 -------------------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <!-- オフライン環境での実行が可能 -->
+        <script>window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');</script>  
+        <!-- lodashをインポート -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <!-- jsファイルの読み込み -->
+        <script src="js/if_key.js"></script>
+    <!-- ------------------------------------------------- -->
+</body>
+</html>
