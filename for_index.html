@@ -15,9 +15,10 @@
 <body>
     <div id="app">
         <table class="table">
-            <th>No.</th><th>ISBN</th><th>書名</th><th>価格</th>
-            <tr v-for="(b, i) in books"> <!--b of booksも可 -->
+            <th>No.</th><th>画像</th><th>ISBN</th><th>書名</th><th>価格</th>
+            <tr v-for="(b, i) in books"> <!--b of booksも可 --> 
                 <td>{{ i + 1 }}</td>
+                <td><img :src="b.image" alt="Book Cover" width="40" height="50" style="object-fit: cover;"></td>
                 <td>{{ b.isbn }}</td>
                 <td>{{ b.title }}</td>
                 <td>{{ b.price }}円</td>
