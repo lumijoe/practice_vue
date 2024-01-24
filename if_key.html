@@ -1,6 +1,6 @@
 <!-- list3-46(p87)0124 -->
 <!-- if_key.html -->
-<!-- 動作バグバージョン：意図しない動作（参考if_else.html） -->
+<!-- 動作バグはkey属性で防ぐ -->
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -27,12 +27,12 @@
             
             <div v-if="pay === 'credit'">
                 カード番号：
-                <!-- key指定により、入力情報はきちんと更新される -->
+                <!-- key指定により、入力情報はきちんとトラッキングされ更新される -->
                 <input type="text" key="credit"/>
             </div>
             <div v-else-if="pay === 'bank'">
                 口座番号&nbsp;&nbsp;&nbsp;：
-                <!-- key指定により、入力情報はきちんと更新される -->
+                <!-- key指定により、入力情報はきちんとトラッキングされ更新される -->
                 <input type="text" key="bank" />
             </div>
         </fieldset>
