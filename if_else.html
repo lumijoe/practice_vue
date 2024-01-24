@@ -22,6 +22,7 @@
                 <option value="labor">勤労感謝の日</option>
             </select>
         </form>
+        <!-- v-else-ifとv-elseはバグることもあり要注意 -->
         <div v-if="holiday==='new'">1月1日。年のはじめを祝う</div>
         <div v-else-if="holiday==='child'">5月5日。こどもの人格を重んじ...</div>
         <div v-else-if="holiday==='culture'">11月3日。自由と平和を愛し...</div>
