@@ -13,16 +13,20 @@
 <body>
     <div id="app">
         <form>
-            <!-- チェックボックスをshowに紐付け -->
-            <label for="show">表示/非表示</label>
-            <input type="checkbox" id="show" v-model="show" />
+            <label for="holiday">祝日：</label><br />
+            <select id="holiday" v-model="holiday">
+                <option value="">祝日を選択してください。</option>
+                <option value="new">元日</option>
+                <option value="child">こどもの日</option>
+                <option value="culture">文化の日</option>
+                <option value="labor">勤労感謝の日</option>
+            </select>
         </form>
-        <!-- showプロパティの値に応じて、パネルの表示/非表示を切り替え -->
-        <div id="panel" v-if="show">
-            <h3>RSSフィールドについて</h3>
-            <div>WINGSでは、弊社執筆の書籍/雑誌/Web記事の...</div>
-        </div>
-        <div v-else>現在、非表示状態です。</div>
+        <div v-if="holiday==='new'">1月1日。年のはじめを祝う</div>
+        <div v-else-if="holiday==='child'">5月5日。こどもの人格を重んじ...</div>
+        <div v-else-if="holiday==='culture'">11月3日。自由と平和を愛し...</div>
+        <div v-else-if="holiday==='labor'">11月23日。勤労をたつとび...</div>
+        <div v-else>なにも選択されていません。</div>
     </div>  
 
 
