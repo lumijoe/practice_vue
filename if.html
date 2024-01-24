@@ -1,0 +1,40 @@
+<!-- list3-41(p84)0124 -->
+<!-- if.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <title>Vue.js</title>
+</head>
+
+<body>
+    <div id="app">
+        <form>
+            <!-- チェックボックスをshowに紐付け -->
+            <label for="show">表示/非表示</label>
+            <input type="checkbox" id="show" v-model="show" />
+        </form>
+        <!-- showプロパティの値に応じて、パネルの表示/非表示を切り替え -->
+        <div id="panel" v-if="show">
+            <h3>RSSフィールドについて</h3>
+            <div>WINGSでは、弊社執筆の書籍/雑誌/Web記事の...</div>
+        </div>
+        <div v-else>現在、非表示状態です。</div>
+    </div>  
+
+
+
+    <!-- lodashとVueの設定 -------------------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <!-- オフライン環境での実行が可能 -->
+        <script>window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');</script>  
+        <!-- lodashをインポート -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <!-- jsファイルの読み込み -->
+        <script src="js/if.js"></script>
+    <!-- ------------------------------------------------- -->
+</body>
+</html>
