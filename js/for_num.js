@@ -1,9 +1,9 @@
-// list3-54(p96)0126
-// for_obj.js
+// list3-56(p97)0126
+// for_num.js
 
 new Vue({
     el: '#app',
-    data: {
+    //data: {
         // books: [
         //     {
         //         image: 'images/noimage.jpg',
@@ -30,11 +30,14 @@ new Vue({
         //         price: 3600
         //     }
         // ]
-        book: {
-            isbn: '978-4-7981-5757-3',
-            title: 'JavaScript逆引きレシピ',
-            price: 2800
-        }
-    }
+
+        // book: {
+        //     isbn: '978-4-7981-5757-3',
+        //     title: 'JavaScript逆引きレシピ',
+        //     price: 2800
+        // }
+
+
+    //}
 });
 
