@@ -1,4 +1,5 @@
 <!-- list3-62(p103)0126 -->
+<!-- 修正版：list3-65:key追加 -->
 <!-- for_change.html -->
 
 <!DOCTYPE html>
@@ -19,7 +20,8 @@
             <input type="button" value="変更" v-on:click="onclick" />
         </form>
         <ul>
-            <li v-for="item in list">{{ item }}</li>
+            <!-- keyを追加することでそのものの削除だけが実行される（keyがない場合は、削除されたものを再生成で把握して表示するのでオーバーヘッドとなる） -->
+            <li v-for="item in list" v-bind:key="item">{{ item }}</li>
         </ul>
     </div>  
   
