@@ -1,0 +1,41 @@
+<!-- list3-70(p110)0126 -->
+<!-- bind_dynamic.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <!-- Bootstrapの導入 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <title>Vue.js</title>
+</head>
+
+
+<body>
+    <div id="app">
+        <select v-model="attr">
+            <option value="height">高さ</option>
+            <option value="width">幅</option>
+        </select>：
+        <input type="text" size="5" v-model="size" /><br />
+        <img src="https://wings.msn.to/image/wings.jpg" v-bind:[attr]="size" />
+    </div> 
+    <!-- v-bind:[attrName]のような大文字は小文字に変換されエラーになる -->
+  
+
+
+
+    <!-- lodashとVueの設定 -------------------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <!-- オフライン環境での実行が可能 -->
+        <script>window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');</script>  
+        <!-- lodashをインポート -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <!-- jsファイルの読み込み -->
+        <script src="js/bind_dynamic.js"></script>
+    <!-- ------------------------------------------------- -->
+   
+</body>
+</html>
