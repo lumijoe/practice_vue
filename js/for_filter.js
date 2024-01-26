@@ -2,6 +2,7 @@
 // for_filter.js
 
 new Vue({
+    
     el: '#app',
     data: {
         books: [
@@ -33,10 +34,15 @@ new Vue({
     },
 
     // 2500円以上の書籍情報を取得する算出プロパティ
+    // 金額をfilterAmountで引数にした場合
     computed: {
+        filterAmount: function() {
+            return 2500;
+        },
+
         expensiveBooks: function() {
             return this.books.filter(function(b) {
-                return b.price >= 2500;
+                return b.price >= filterAmount;
             })
         }
     }

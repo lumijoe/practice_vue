@@ -1,4 +1,5 @@
 <!-- list3-57(p98)0126 -->
+<!-- 別解：list3-59(p100)0126 -->
 <!-- for_filter.html -->
 
 <!DOCTYPE html>
@@ -15,15 +16,40 @@
 
 <body>
     <div id="app">
-        テーブル <table class="table">
-            <th>画像</th><th>ISBN</th><th>書名</th><th>価格</th>
-            <tr v-for="b in expensiveBooks"> 
-                <td><img :src="b.image" alt="Book Cover" width="40" height="50" style="object-fit: cover;"></td>
-                <td>{{ b.isbn }}</td>
-                <td>{{ b.title }}</td>
-                <td>{{ b.price }}円</td>
-            </tr>
-        </table>
+        <div>
+            <h1 style="color: rgb(167, 210, 210);">書籍一覧</h1>
+            <table class="table"  style="background-color: rgb(167, 210, 210);">
+                <th>No.</th><th>画像</th><th>ISBN</th><th>書名</th><th>価格</th>
+                <tr v-for="(b, i) in books"> 
+                    <td>{{ i + 1 }}</td>
+                    <td><img :src="b.image" alt="Book Cover" width="40" height="50" style="object-fit: cover;"></td>
+                    <td>{{ b.isbn }}</td>
+                    <td>{{ b.title }}</td>
+                    <td>{{ b.price }}円</td>
+                </tr>
+            </table>
+        </div>
+        <br/>
+        <br/>
+
+        <!-- 別解：v-forでなくv-ifを使用した場合 -->
+        <!-- フィルターの金額をfilterAmountで引数にした場合 -->
+        <div>
+            <h4>{{ filterAmount }}円以上の書籍</h4>
+            <table class="table">
+                <th>No.</th><th>画像</th><th>ISBN</th><th>書名</th><th>価格</th>
+                <!-- <tr v-for="(b, i) in books" 
+                    v-if="b.price >= 2500">  -->
+                <tr v-for="(b, i) in books" 
+                    v-if="b.price >= filterAmount"> 
+                    <td>{{ i + 1 }}</td>
+                    <td><img :src="b.image" alt="Book Cover" width="40" height="50" style="object-fit: cover;"></td>
+                    <td>{{ b.isbn }}</td>
+                    <td>{{ b.title }}</td>
+                    <td>{{ b.price }}円</td>
+                </tr>
+            </table>
+        </div>
     </div>  
   
 
