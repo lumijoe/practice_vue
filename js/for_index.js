@@ -12,7 +12,7 @@ new Vue({
                 price: 2800
             },
             {
-                image: 'images/_wings.jpg',
+                image: 'images/wings.jpg',
                 isbn: '978-4-8399-6644-7',
                 title: '楽しいラズパイ電子工作ブック',
                 price: 1900
@@ -24,7 +24,7 @@ new Vue({
                 price: 2480
             },
             {
-                image: 'images/_wings.jpg',
+                image: 'images/wings.jpg',
                 isbn: '978-4-7981-5382-7',
                 title: '独習C# 新版',
                 price: 3600
