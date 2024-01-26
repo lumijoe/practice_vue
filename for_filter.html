@@ -16,19 +16,21 @@
 
 <body>
     <div id="app">
-        <div>
-            <h1 style="color: rgb(167, 210, 210);">書籍一覧</h1>
-            <table class="table"  style="background-color: rgb(167, 210, 210);">
-                <th>No.</th><th>画像</th><th>ISBN</th><th>書名</th><th>価格</th>
-                <tr v-for="(b, i) in books"> 
-                    <td>{{ i + 1 }}</td>
-                    <td><img :src="b.image" alt="Book Cover" width="40" height="50" style="object-fit: cover;"></td>
-                    <td>{{ b.isbn }}</td>
-                    <td>{{ b.title }}</td>
-                    <td>{{ b.price }}円</td>
-                </tr>
-            </table>
-        </div>
+        <template>
+            <div>
+                <h1 style="color: rgb(167, 210, 210);">書籍一覧</h1>
+                <table class="table"  style="background-color: rgb(167, 210, 210);">
+                    <th>No.</th><th>画像</th><th>ISBN</th><th>書名</th><th>価格</th>
+                    <tr v-for="(b, i) in books"> 
+                        <td>{{ i + 1 }}</td>
+                        <td><img :src="b.image" alt="Book Cover" width="40" height="50" style="object-fit: cover;"></td>
+                        <td>{{ b.isbn }}</td>
+                        <td>{{ b.title }}</td>
+                        <td>{{ b.price }}円</td>
+                    </tr>
+                </table>
+            </div>
+        </template>
         <br/>
         <br/>
 
@@ -36,22 +38,24 @@
         <!-- フィルターの金額をfilterAmountで引数にした場合 -->
         <!-- expensiveは以上の時は使用できるが以下や未満を使用したい時に変数名の変更が必要になるので、filterしたい金額そのものを表現する変数名としてfilterAmountを採用 -->
         <!-- v-forは繰り返す要素が空でない場合というものを指定できる。親要素にv-if="books.length" を指定-->
-        <div>
-            <h4>{{ filterAmount }}円以上の書籍</h4>
-            <table class="table" v-if="books.length">
-                <th>No.</th><th>画像</th><th>ISBN</th><th>書名</th><th>価格</th>
-                <!-- <tr v-for="(b, i) in books" 
-                    v-if="b.price >= 2500">  -->
-                <tr v-for="(b, i) in books" 
-                    v-if="b.price >= filterAmount"> 
-                    <td>{{ i + 1 }}</td>
-                    <td><img :src="b.image" alt="Book Cover" width="40" height="50" style="object-fit: cover;"></td>
-                    <td>{{ b.isbn }}</td>
-                    <td>{{ b.title }}</td>
-                    <td>{{ b.price }}円</td>
-                </tr>
-            </table>
-        </div>
+        <template>
+            <div>
+                <h4>{{ filterAmount }}円以上の書籍</h4>
+                <table class="table" v-if="books.length">
+                    <th>No.</th><th>画像</th><th>ISBN</th><th>書名</th><th>価格</th>
+                    <!-- <tr v-for="(b, i) in books" 
+                        v-if="b.price >= 2500">  -->
+                    <tr v-for="(b, i) in books" 
+                        v-if="b.price >= filterAmount"> 
+                        <td>{{ i + 1 }}</td>
+                        <td><img :src="b.image" alt="Book Cover" width="40" height="50" style="object-fit: cover;"></td>
+                        <td>{{ b.isbn }}</td>
+                        <td>{{ b.title }}</td>
+                        <td>{{ b.price }}円</td>
+                    </tr>
+                </table>
+            </div>
+        </template>
     </div>  
   
 
