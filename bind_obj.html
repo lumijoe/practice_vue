@@ -1,0 +1,42 @@
+<!-- list3-66(p108)0126 -->
+<!-- bind_obj.html -->
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <!-- Bootstrapの導入 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <title>Vue.js</title>
+</head>
+
+
+<body>
+    <div id="app">
+        <!-- <form>
+            <label for="memo">メモ：</label>
+            <input type="text" id="memo" v-bind="attrs" />
+        </form> -->
+        <form>
+            <label for="memo">メモ：</label>
+            <input type="text" id="memo" size="20" maxlength="14" required="required" />
+        </form>
+    </div>  
+  
+
+
+
+    <!-- lodashとVueの設定 -------------------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <!-- オフライン環境での実行が可能 -->
+        <script>window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');</script>  
+        <!-- lodashをインポート -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <!-- jsファイルの読み込み -->
+        <script src="js/bind_obj.js"></script>
+    <!-- ------------------------------------------------- -->
+   
+</body>
+</html>
