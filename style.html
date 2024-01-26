@@ -15,8 +15,13 @@
 
 <body>
     <div id="app">
-        <!-- スタイルプロパティはキャメルケースで記述 -->
-        <div v-bind:style="{ backgroundColor: 'Aqua', fontSize: '1.5em' }">
+        <!-- スタイルプロパティ：キャメルケース -->
+        <!-- <div v-bind:style="{ backgroundColor: 'Aqua', fontSize: '1.5em' }">
+            皆さん、こんにちは！
+        </div> -->
+
+        <!-- スタイルプロパティ： クオートで括る-->
+        <div v-bind:style="{ 'background-color': 'Aqua', 'font-size': '1.5em' }">
             皆さん、こんにちは！
         </div>
         
