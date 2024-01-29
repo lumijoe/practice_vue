@@ -19,7 +19,8 @@
             親要素
             <div id="my" v-on:click="onMyClick">
                 現在要素
-                <div id="child" v-on:click="onChildClick">
+                <!-- <div id="child" v-on:click="onChildClick"> -->
+                <div id="child" v-on:click.stop="onChildClick">
                     子要素
                 </div>
             </div>
