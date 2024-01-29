@@ -1,5 +1,5 @@
-// list3-79(p117)0129
-// style_multi.js
+// list3-81(p118)0129
+// style_prefix.js
 
 new Vue({
     el: '#app',
