@@ -106,6 +106,9 @@
 - Vetur, Volar どちらかで検討中
 - Vuetify
 
-## 複数 style を配列形式で当てる
+## 複数 style を配列形式で当てるものと、冗長的スタイルを prefix してくれるもの
 
 - style_multi.html と js/style_multi.js
+- style_prefix.html と js/style_prefix.js
+- v-bind:style はあくまで応急処置的な適用法、本格的には v-bind:class を使用することが推奨される
+  　 v-bind は省略できるので:class でも可能
