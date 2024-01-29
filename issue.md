@@ -99,3 +99,9 @@
   - **keypress** キーを押し続けている時
 
   **v-for + key はセットで使用してオーバーヘッドを防ぐ**
+
+## Vscode, Chrome 　 Devtools 拡張機能導入
+
+- Vue Devtools
+- Vetur, Volar どちらかで検討中
+- Vuetify
