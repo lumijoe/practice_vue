@@ -1,11 +1,11 @@
-// list3-81(p118)0129
-// style_prefix.js
+// list3-85(p121)0129
+// class_str.js
 
 new Vue({
     el: '#app',
     data: {
-        color: true,
-        isChange: true,
+        colorClass: 'color',
+        frameClass: 'frame',
     }
 });
 

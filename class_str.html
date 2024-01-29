@@ -1,5 +1,5 @@
-<!-- list3-82(p119)0129 -->
-<!-- class.html -->
+<!-- list3-84(p121)0129 -->
+<!-- class_str.html -->
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -15,8 +15,9 @@
 
 <body>
     <div id="app">
+        <!-- :classを文字列配列として渡し、js側dataで定義 -->
         <div class="small"
-            :class="{ color, frame: isChange }">
+            :class="[ colorClass, frameClass ]">
             皆さん、こんにちは！
         </div>
     </div> 
@@ -31,7 +32,7 @@
         <!-- lodashをインポート -->
         <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
         <!-- jsファイルの読み込み -->
-        <script src="js/class.js"></script>
+        <script src="js/class_str.js"></script>
     <!-- ------------------------------------------------- -->
    
 </body>
