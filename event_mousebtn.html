@@ -10,12 +10,42 @@
     <!-- Bootstrapの導入 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
     <title>Vue.js</title>
+    <style>
+        [v-cloak] { display: none; }
+    </style>
 </head>
 
 
 <body>
     <div id="app">
-       
+        <div id="main"
+            v-on:click.left="onleftclick"
+            v-on:click.right.prevent="onrightclick">
+            ボタンの右クリックでコンテキストメニューを表示します
+        </div>
+
+        <!-- コンテキストメニューの定義 -->
+        <ul class="cxt"
+            v-bind:style="pos"
+            v-show="show"
+            v-cloak
+        >
+            <li>
+                <a href="https://wings.msn.to/index.php/-/A-08/">
+                    {{ help }}
+                </a>
+            </li>
+            <li>
+                <a href="https://wings.msn.to/index.php/-/B-14/">
+                    質問掲示板
+                </a>
+            </li>
+            <li>
+                <a href="https://wings.msn.to/index.php/-/B-11/">
+                    よくある質問一覧
+                </a>
+            </li>
+        </ul>
     </div> 
     
 
@@ -30,6 +60,6 @@
         <!-- jsファイルの読み込み -->
         <script src="js/event_mousebtn.js"></script>
     <!-- ------------------------------------------------- -->
-   
+    
 </body>
 </html>
