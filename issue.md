@@ -116,3 +116,7 @@
 ## {{}}の構文が一瞬表示されてしまう問題は cloak で解決
 
 - cloak.html, js/cloak.js, cloak.css を参考
+
+## 送信しても良いかの確認
+
+- event_submit.html 参考
