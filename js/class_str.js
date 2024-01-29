@@ -1,5 +1,5 @@
-// list3-83(p120)0129
-// class.js
+// list3-81(p118)0129
+// style_prefix.js
 
 new Vue({
     el: '#app',
