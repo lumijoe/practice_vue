@@ -105,3 +105,7 @@
 - Vue Devtools
 - Vetur, Volar どちらかで検討中
 - Vuetify
+
+## 複数 style を配列形式で当てる
+
+- style_multi.html と js/style_multi.js
