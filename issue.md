@@ -112,3 +112,7 @@
 - style_prefix.html と js/style_prefix.js
 - v-bind:style はあくまで応急処置的な適用法、本格的には v-bind:class を使用することが推奨される
   　 v-bind は省略できるので:class でも可能
+
+## {{}}の構文が一瞬表示されてしまう問題は cloak で解決
+
+- cloak.html, js/cloak.js, cloak.css を参考
