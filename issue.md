@@ -120,3 +120,7 @@
 ## 送信しても良いかの確認
 
 - event_submit.html 参考
+
+## キーコードエイリアス
+
+- event_key.html 参考
