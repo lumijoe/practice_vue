@@ -14,7 +14,11 @@
 
 <body>
     <div id="app">
-       
+       <p>現在値：{{ current }}</p>
+       <!-- 増分量の異なるボタンを配置 -->
+       <my-counter step="1" v-on:click="onplus"></my-counter>
+       <my-counter step="2" v-on:click="onplus"></my-counter>
+       <my-counter step="-1" v-on:click="onplus"></my-counter>
     </div> 
 
     <!-- lodashとVueの設定 -------------------------------- -->
