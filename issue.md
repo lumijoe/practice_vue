@@ -128,3 +128,4 @@
 ## コンポーネント（Vue.js 推奨のファイル名は大文字始まり）
 
 - comp_basic.js 参考
+- slot_multi.html と js 　ヘッダー、メイン、フッター参考
