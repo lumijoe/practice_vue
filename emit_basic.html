@@ -1,6 +1,3 @@
-<!-- list4-13(p160)0130 -->
-<!-- emit_basic.html -->
-
 <!DOCTYPE html>
 <html lang="ja">
 <head>
@@ -16,9 +13,9 @@
     <div id="app">
        <p>現在値：{{ current }}</p>
        <!-- 増分量の異なるボタンを配置 -->
-       <my-counter step="1" v-on:click="onplus"></my-counter>
-       <my-counter step="2" v-on:click="onplus"></my-counter>
-       <my-counter step="-1" v-on:click="onplus"></my-counter>
+       <my-counter step="1" v-on:plus="onplus"></my-counter>
+       <my-counter step="2" v-on:plus="onplus"></my-counter>
+       <my-counter step="-1" v-on:plus="onplus"></my-counter>
     </div> 
 
     <!-- lodashとVueの設定 -------------------------------- -->
