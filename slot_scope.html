@@ -1,5 +1,5 @@
-<!-- list4-23(p171)0131 -->
-<!-- slot_scope.html(正しく動作しない版) -->
+<!-- list4-25(p172)0202 -->
+<!-- slot_scope.html(修正版) -->
 
 <!DOCTYPE html>
 <html lang="ja">
@@ -16,9 +16,12 @@
     <div id="app">
         <!-- my-bookコンポーネント内でスロットを利用し、bookデータを渡す -->
         <my-book>
-            <!-- スロット内でbookデータを受け取り、表示する -->
+            <!-- スロット内でbookデータを受け取り、表示する
             <template v-slot="{ book }">
                 {{ book.title }} ({{ book.price }}円)
+            </template> -->
+            <template v-slot:default="slotProp">
+                {{ slotProp.book.title }} ({{ slotProp.book.price }}円) {{ slotProp.book.publish }}
             </template>
         </my-book>
     </div> 

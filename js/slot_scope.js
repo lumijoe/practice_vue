@@ -1,5 +1,5 @@
-// list4-18(p164)0131
-// ev_parent.js
+// list4-24(p173)0202
+// slot_scope.js(修正版)
 
 Vue.component('my-book', {
    data: function() {
@@ -16,7 +16,9 @@ Vue.component('my-book', {
     `
     <div>
         <!-- スロットにbookデータを渡す -->
-        <slot :book="book"></slot>
+        <slot :book="book">
+        {{book.title}} ({{book.publish}})
+        </slot>
     </div>
     `
 });
