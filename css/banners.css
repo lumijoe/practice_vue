@@ -1,0 +1,14 @@
+.banner {
+  width: 350px;
+  padding: 10px;
+  border: medium solid #000;
+  border-radius: 10px;
+  background-color: #ffffcc;
+  font-size: smaller;
+  margin: 10px;
+}
+
+h3 {
+  font-size: 150%;
+  color: #800000;
+}
