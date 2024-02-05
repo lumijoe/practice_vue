@@ -131,4 +131,5 @@
 - slot_multi.html と js 　ヘッダー、メイン、フッター参考
 - バナー 3 秒毎に切り替え：banners.html
 - タブ 3 つ：tabs.html
-- Animate.css の導入https://animate.style/
+- Animate.css の導入(レガシー感あり)https://animate.style/
+- リスト、ソート、追加、削除 anim_list.html
