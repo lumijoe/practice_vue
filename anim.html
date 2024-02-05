@@ -15,8 +15,7 @@
 <body>
     <div id="app">
         <input type="button" value="表示／非表示" v-on:click="onclick" />
-        <transition>
-        <!-- <transition appear> -->
+        <transition appear>
           <div id="panel" v-show="flag">
             WINGSプロジェクトで一緒に執筆の仕事をしてみませんか？<br />
             ただいまメンバー募集中！<br />
