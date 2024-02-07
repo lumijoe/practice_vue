@@ -1,0 +1,50 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <!-- Bootstrapの導入 -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+    <title>Vue.js</title>
+</head>
+
+<body>
+  <div id="app">
+    <form>
+      <label for="name">氏名：</label>
+      <input  v-validate="'required|max: 10'"
+        id="name" name="name" />
+      <span v-show="errors.has('name')">{{ errors.first('name') }}</span><br />
+      <label for="age">年齢：</label>
+      <input v-validate="'numeric|between: 20, 60'"
+        id="age" name="age"  type="number" />
+      <span v-show="errors.has('age')">{{ errors.first('age') }}</span><br />
+      <label for="sex">性別：</label>
+      <select v-validate="'included:男,女,その他'"
+        id="sex" name="sex">
+        <option value="男" selected>男性</option>
+        <option value="女">女性</option>
+        <option value="その他">その他</option>
+      </select>
+      <span v-show="errors.has('sex')">{{ errors.first('sex') }}</span><br />
+    </form>
+  </div>
+
+    <!-- lodashとVueの設定 -------------------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <!-- オフライン環境での実行が可能 -->
+        <script>window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');</script>  
+        <!-- lodashをインポート -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <!-- その他の読み込み -->
+        <script src="https://cdn.jsdelivr.net/npm/vee-validate@2.2.15/dist/vee-validate.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vee-validate@2.2.15/dist/locale/ja.js"></script>
+        <!-- jsファイルの読み込み -->
+        <script src="js/validate_message.js"></script>
+    <!-- ------------------------------------------------- -->
+   
+</body>
+</html>
