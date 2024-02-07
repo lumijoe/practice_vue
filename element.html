@@ -1,0 +1,58 @@
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="logo.svg" type="image/x-icon">
+    <!-- Bootstrapの導入 -->
+    <!-- <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" /> -->
+    <link rel="stylesheet"
+  href="https://unpkg.com/element-ui/lib/theme-chalk/index.css" />
+    <link rel="stylesheet" href="css/element.css" />
+    <title>Vue.js</title>
+</head>
+
+<body>
+  <div id="app">
+    <el-carousel :interval="5000" arrow="hover">
+      <el-carousel-item>
+        <div>
+          <h3>WINGSプロジェクト</h3>
+          <p>ようこそ！WINGSプロジェクトへ</p>
+          <img src="https://wings.msn.to/image/wings.jpg" />
+        </div>
+      </el-carousel-item>
+      <el-carousel-item>
+          <div>
+            <h3>メンバー募集中！</h3>
+            一緒に執筆のお仕事をしてみませんか？<br />
+            現在、WINGSでは執筆メンバーを募集しています。
+          </div>
+      </el-carousel-item>
+      <el-carousel-item>
+        <div>
+          <h3>What's New</h3>
+          WINGSの最新情報です。<br />
+          RSSでも配信しています。是非ご覧ください。<br />
+          <a href="https://wings.msn.to/index.php/-/A-02/">最新情報一覧</a>
+        </div>
+      </el-carousel-item>
+    </el-carousel>
+  </div>
+
+    <!-- lodashとVueの設定 -------------------------------- -->
+        <script src="https://cdn.jsdelivr.net/npm/vue@2.6.10/dist/vue.js"></script>
+        <!-- オフライン環境での実行が可能 -->
+        <script>window.Vue || document.write('<script src="lib/vue.min.js"><\/script>');</script>  
+        <!-- lodashをインポート -->
+        <script src="https://cdn.jsdelivr.net/npm/lodash@4.17.11/lodash.min.js"></script>
+        <!-- その他の読み込み -->
+        <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+        <!-- jsファイルの読み込み -->
+        <script src="js/element.js"></script>
+    <!-- ------------------------------------------------- -->
+   
+</body>
+</html>
